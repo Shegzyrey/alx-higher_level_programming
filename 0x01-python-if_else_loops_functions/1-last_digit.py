@@ -5,7 +5,7 @@ l_digit = (number % 10)
 
 if l_digit == 0:
     varStr = "0"
-elif last_digit > 5:
+elif l_digit > 5:
     varStr = "greater thn 5"
 else:
     varStr = "less than 6 and not 0"
