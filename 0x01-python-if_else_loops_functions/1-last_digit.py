@@ -10,4 +10,4 @@ elif last_digit > 5:
 else
     conditionalStr = "less than 6 and not 0"
 
-print(f"Last digit of {number} is {last_digit} and is {coditionalStr}")
+print("Last digit of {} is {} and is {}" .format(number, last_digit, conditionalStr))
