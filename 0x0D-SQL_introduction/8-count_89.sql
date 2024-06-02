@@ -1,2 +1,2 @@
 -- count the rows in a table
-select count(*) from hbtn_0c_0.first_table where id=89;
+SELECT count(*) FROM first_table WHERE id=89;
