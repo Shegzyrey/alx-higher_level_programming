@@ -18,8 +18,7 @@ class Rectangle {constructor (width, height){
         }
     }
     rotate(){
-        this.width = h;
-        this.height = w;
+        [this.width,this.height] = [this.height, this.width];
         for (let i = 0; i < this.width; i++) {
             let row = "";
             for (let j = 0; j < this.height; j++) {
