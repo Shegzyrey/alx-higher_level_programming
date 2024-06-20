@@ -14,8 +14,9 @@ class Rectangle {constructor (width, height){
             for (let j = 0; j < this.height; j++) {
                 row += "x";
             }
-            console.log(row)
+            console.log(row);
         }
     }
-}
+};
 
+module.exports = Rectangle;
