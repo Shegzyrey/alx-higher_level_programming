@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""List all states in ascending order of ID"""
+"""List all states in ascending order of ID starting with N"""
 
 
 if __name__ == "__main__":
@@ -22,7 +22,8 @@ if __name__ == "__main__":
                          db=db_name)
 
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name like 'N%' ORDER BY states.id ASC;")
+    cursor.execute("SELECT * FROM states WHERE name like\
+            'N%' ORDER BY states.id ASC;")
     rows = cursor.fetchall()
     for row in rows:
         print(row)
