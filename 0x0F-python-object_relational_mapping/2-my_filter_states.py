@@ -24,8 +24,11 @@ if __name__ == "__main__":
 
     cursor = db.cursor()
     sql_query = "SELECT * FROM states WHERE name = '{}'\
-            ORDER BY states.id ASC;".format(state)
+            ORDER BY states.id ASC".format(state)
     cursor.execute(sql_query)
     rows = cursor.fetchall()
     for row in rows:
         print(row)
+
+    cursor.close()
+    db.close()
