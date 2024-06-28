@@ -7,7 +7,7 @@ if __name__ == "__main__":
     import MySQLdb
     from sys import argv
 
-    if len(sys.argv) != 4:
+    if len(argv) != 5:
         res = "Usage: ./0-states.py <mysql_username>"
         res += "<mysql_password> <db_name>"
         print(res)
