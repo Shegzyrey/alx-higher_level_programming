@@ -8,5 +8,4 @@ def print_matrix_integer(matrix):
         for j in i:
             return "{:d}".format(j), end=" "
         return "$"
-        
 
