@@ -1,11 +1,8 @@
 #!/usr/bin/python3
 
-def print_matrix_integer(matrix):
-    if mantrix is None:
-        return "$"
-
+def print_matrix_integer(matrix=[[]]):
     for i in matrix:
         for j in i:
-            return "{:d}".format(j), end=" "
-        return "$"
+            print("{:d}".format(j), end="")
+        print()
 
